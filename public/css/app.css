@@ -1,0 +1,38 @@
+#app{
+	text-align:center;
+	color:white;
+}
+
+img{
+	width: 100px;
+}
+
+.about .col
+{
+    margin-bottom: 24px;
+}
+
+.about h5
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.about h6
+{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 45px;
+}
+
+.about hr
+{
+    width: 40px;
+    margin-bottom: 45px;
+}
+
+.about .card
+{
+    text-align: center;
+}

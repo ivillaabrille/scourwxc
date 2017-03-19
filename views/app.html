@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scour | An Arist/Band Previewer</title>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+  <header>
+    <nav class="black pinned" style="z-index:1000;">
+      <div class="container grey darken-4">
+        <div class="nav-wrapper">
+          <a href=""class="brand-logo ">Scour</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#about" class=" ">About</a></li>
+            <li><a href="#Preview" class=" ">Preview</a></li>
+            <li><a href="#Find Me" class=" ">Find Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>      
+      <div class="parallax-container" id="start">
+        <div class="parallax white-text">
+          <img src="img/darkbg.jpg" style="z-index: -999">
+          <br/><br/><br/><br/>
+          <h1 class="center-align  white-text  ">Scour</h1>
+          <h5 class="center-align  white-text ">An Artist/Band Previewer</h5>
+          <br/><br/><br/>
+        </div>
+      </div>
+
+      <div class="section white" id="about">
+      <div class="row container" style="height: 20rem;">
+             <div class="container about">
+                    <h5>Welcome to Scour</h5>
+                    <h6>Things you need to know</h6>
+                    <hr>
+                    <div class="row">
+                      <div class="col s12 m4 l4">
+                        <h6>About Scour</h6>
+                        <p>Scour is a website made in regards to a project for the Cloud Computing Subject as Software as a Service and Web Development 1. This is to be deployed on a internet hosting service. The hosting service I used is <a href="https://heroku.com/">Heroku</a>. This site will allow you to explore a wide variety of artist powered by the Spotify API and listen to a certain preview track.</p>
+                        <p>Scour is a school project and requirement, made in the hopes of passing the subjects and is made with the help of <a href="http://materializecss.com/">MaterializeCSS</a>.</p>
+                        <p>Warning: Once submitting please wait awhile as it is depending on your current internet speed.  </p>
+                      </div>
+                      <div class="col s12 m4 l4">
+                        <h6>Creator</h6>
+                        <div class="card blue-grey darken-1">
+                          <div class="card-content white-text">
+                            <img src="img/sai.jpg" width="64" height="64">
+                            <p>Isaiah Evans A. Villa Abrille is a third year Software Engineering Student from the University of the Immaculate Conception.</p>
+                          </div>
+                          <div class="card-action">
+                            <a href="https://www.facebook.com/ayesahyah">Facebook</a>
+                            <a href='https://www.twitter.com/ayesahyah'>Twitter</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col s12 m4 l4">
+                        <h6>Steps</h6>
+                        <ul class="collapsible">
+                          <li class="active">
+                            <div class="collapsible-header"><i class="mdi-av-web"></i>Step 1</div>
+                            <div class="collapsible-body"><p>Enter the Artist/Band's Name.</p></div>
+                          </li>
+                          <li>
+                            <div class="collapsible-header"><i class="mdi-editor-format-align-justify"></i>Step 2</div>
+                            <div class="collapsible-body"><p>Click on the Submit Button.</p></div>
+                          </li>
+                          <li>
+                            <div class="collapsible-header"><i class="mdi-av-play-shopping-bag"></i>Step 3</div>
+                            <div class="collapsible-body"><p>Scroll down to find the player or click on the Preview on the Top Right Side of the site.</p></div>
+                          </li>
+                          <li>
+                            <div class="collapsible-header"><i class="mdi-editor-insert-comment"></i>Step 4</div>
+                            <div class="collapsible-body"><p>Confirm the artist by playing a specific preview of them powered by the Spotify API.</p></div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+        </div>
+      </div>
+  
+
+  <div class="row" style="position:relative;top:-40rem;">
+          <div class="col s12 l2">
+                      <div class="card white hoverable" style="height:150px;">
+                                <div class="card-content">
+                                <br/>
+                      <form method="post" action="javascript:x();" style="z-index: 999;">
+                      <div class="row">                            
+                          <div class="input-field">
+                              <input type="text" class="col s6 m9 l8" id="abname" placeholder="Enter Artist/Band Name" maxlength="200" autocomplete=off required />
+                              <input class="btn black waves-effect waves-light" type="submit" name="action" value="Submit" style="float:right;" /> 
+                          </div>                             
+                      </div> 
+                  </form>
+              </div>
+          </div>
+          </div>  
+      </div>   
+
+      <div id="app" style="position:relative;top:20rem;z-index: 500;"></div> 
+   
+   
+      <div class="parallax-container" id="Preview">
+        <div class="parallax white-text">
+          <img src="img/darkbg.jpg" style="z-index: -999">
+          <br/><br/><br/><br/><br/>       
+              
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer grey darken-4" id="Find Me">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Scour</h5>
+            <p class="grey-text text-lighten-4">Is a project made in requirements to passing the subjects and will allow you to explore a wide variety of artist powered by the Spotify API and listen to a certain preview track.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Find me on the Following:</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://web.facebook.com/AyeSahYah">Facebook</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://twitter.com/AyeSahYah">Twitter</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://plus.google.com/u/0/110982669652308771796">Google+</a></li>
+              <li><a class="grey-text text-lighten-3" href="http://steamcommunity.com/id/AyeSahYah/">Steam</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright black ">
+        <div class="container">
+        Villa Abrille © Copyright Text 2017
+        <a class="white-text right" href="#start" style="text-decoration: none;"><i class="material-icons tiny left">arrow_upward</i> Back to top</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript">    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+        </script>
+
+
+</body>
+</html>
